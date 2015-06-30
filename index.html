@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html ng-app='pokemonApp'>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+  <script type="text/javascript" src="mock_data.js"></script>
+  <script type="text/javascript" src="base.js"></script>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <style type="text/css">
+    body  {
+      text-align: center;
+    }
+
+    .vs {
+      line-height: 40px;
+      vertical-align: top;
+    }
+
+    img {
+      height: 40px;
+    }
+  </style>
+</head>
+<body ng-controller="PokemonCtrl">
+
+  <h3 ng-hide="battle.length">
+    CHOOSE YOUR FIGHTERS!
+  </h3>
+
+  <h3 ng-show="previousWinner">
+    {{previousWinner}} Wins!
+  </h3>
+
+  <div id="arena">
+    <img ng-show="battle[0]" src="{{battle[0].image.href}}">
+    <span ng-show="battle[1]" class="vs"> vs. </span>
+    <img ng-show="battle[1]" src="{{battle[1].image.href}}">
+  </div>
+
+  <div >
+    <button ng-show="battle[1]"
+            ng-click="pickWinner()">Fight!</button>
+  </div>
+
+  <span ng-repeat="pokemon in pokemons">
+    <a ng-href="#PREPARE-FOR-BATTLE-{{pokemon.name.text | uppercase}}!!!"
+        ng-click="iChooseYou(pokemon)">
+      {{pokemon.name.text}}
+    </a>
+  </span>
+
+
+</body>
+</html>
