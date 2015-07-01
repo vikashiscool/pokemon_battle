@@ -11,13 +11,13 @@ app
       var deferred = $q.defer();
 
       $http
-           .jsonp("https://www.kimonolabs.com/api/74dfm89w?apikey=Zgn83shuWLFhlB7k5n4arKz3Z18Z5lvr&callback=JSON_CALLBACK")
-           .success(function(res){
-              deferred.resolve(res.results.collection1);
-            })
-           .error(function (rejection) {
-              deferred.reject(rejection);
-           });
+       .jsonp("https://www.kimonolabs.com/api/74dfm89w?apikey=Zgn83shuWLFhlB7k5n4arKz3Z18Z5lvr&callback=JSON_CALLBACK")
+       .success(function(res){
+          deferred.resolve(res.results.collection1);
+        })
+       .error(function (rejection) {
+          deferred.reject(rejection);
+       });
 
       return deferred.promise;
     };
