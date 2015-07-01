@@ -1,4 +1,4 @@
-app.controller('PokemonCtrl', ['$scope', '$http', 'PokemonModel', function($scope, $http, PokemonModel) {
+app.controller('PokemonCtrl', function($scope, PokemonModel) {
 
   PokemonModel.get().then(
     function(response){
@@ -31,4 +31,4 @@ app.controller('PokemonCtrl', ['$scope', '$http', 'PokemonModel', function($scop
     $scope.battle = [];
   }
 
-}]);
+});
