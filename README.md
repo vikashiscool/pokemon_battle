@@ -19,7 +19,11 @@ Your goal is to build a simple pokemon battle game!
 When you're done it should look like this:
 
 ![basic layout](screenshots/1.png)
+
+You should be able to choose two pokemon:
 ![pick your fighters](screenshots/2.png)
+
+You should see who won the match:
 ![winner](screenshots/3.png)
 
 ##Built in Directives
