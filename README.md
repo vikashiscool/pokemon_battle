@@ -20,9 +20,9 @@
 
 
 ##Built in Directives
-Repeat
-Hiding and Showing
-Event Binding
+* Repeating
+* Hiding and Showing
+* Event Binding
 
 ##Avoiding "The Flicker"
 * What's the difference between:
@@ -39,3 +39,7 @@ When you're done it should look like this:
 ![winner](screenshots/3.png)
 
 Reading:
+
+* [ng-cloak](https://docs.angularjs.org/api/ng/directive/ngCloak)
+* [ng-src](https://docs.angularjs.org/api/ng/directive/ngSrc)
+* [ng-click](https://docs.angularjs.org/api/ng/directive/ngClick)
