@@ -9,7 +9,24 @@
   <script type="text/javascript" src="mock_data.js"></script>
   <script type="text/javascript" src="base.js"></script>
 </head>
-<body ng-controller="PokemonCtrl">
 
+<body ng-controller="PokemonCtrl">
+   <h1 ng-hide="image1">CHOOSE YOUR POKEMON!</h1>
+
+    <div>
+      <img ng-src="{{image1}}" ng-show="image1">
+      <p ng-show="image2">vs.<p>
+      <img ng-src="{{image2}}" ng-show="image2">
+      <button ng-show="image2"
+              ng-click="fight()">
+              HUG!</button>
+    </div>
+
+  <span ng-repeat="p in pokemon">
+    <a ng-href="#{{p.name.text}}" 
+    ng-click="iChooseYou(p)"> {{ p.name.text }} 
+    </a>
+<!--     <img ng-src="{{ p.image.href }}">  -->
+  </span>
 </body>
 </html>
