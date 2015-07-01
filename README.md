@@ -118,4 +118,5 @@ Reading:
 * [ng-click](https://docs.angularjs.org/api/ng/directive/ngClick)
 
 Bonus reading:
+* [What's the difference between the `factory pattern` and the `service pattern`?](http://stackoverflow.com/a/20985702/3390061)
 * [Promises are new to ECMASCRIPT 6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
