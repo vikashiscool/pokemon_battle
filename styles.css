@@ -1,0 +1,26 @@
+body  {
+  text-align: center;
+}
+
+.vs {
+  line-height: 40px;
+  vertical-align: top;
+}
+
+img {
+  height: 40px;
+}
+
+a {
+  padding: 1px 5px;
+  text-decoration: none;
+}
+
+a:hover {
+  border: 1px solid black;
+  padding: 0px 4px;
+}
+
+button {
+  width: 25%;
+}
